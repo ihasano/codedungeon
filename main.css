@@ -1,0 +1,25 @@
+
+.fon {
+
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+
+}
+
+
+
+.h1 {
+
+    width: 200px;
+    height: 200px;
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.h2 {
+    font-family: "Roboto", sans-serif;
+}
