@@ -1,16 +1,50 @@
-
-.fon {
+body {
+    background-color: rgb(241, 249, 255);
+}
+.container {
 
     width: 600px;
     height: 600px;
-    margin: 0 auto;
+    margin: auto;
+    display: block;
     background-color: rgb(255, 255, 255);
-    border-radius: 7px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.203);
+}
 
+.first-name {
+    width: 100px;
+    height: 20px;
 }
 
 
 
+.last-name {
+    width: 100px;
+    height: 20px;
+}
+
+
+
+.email {
+    width: 200px;
+    height: 20px;
+}
+
+
+
+.password {
+    width: 200px;
+    height: 20px;
+}
+
+
+
+.submit {
+    width: 200px;
+    height: 20px;
+}
 .h1 {
 
     width: 200px;
@@ -18,8 +52,11 @@
     font-family: "Roboto", sans-serif;
     font-size: larger;
     font-weight: 600;
+    margin-left: 50px;
+    
 }
 
 .h2 {
     font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
