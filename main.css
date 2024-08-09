@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 a {
     text-decoration: none; 
     font-size: 18px;
@@ -53,6 +54,14 @@ body {
     grid-template-columns: repeat(5,28%);
     margin: 0;
     padding-top: 20px;
+}
+
+.AddList_Btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 15px 30px;
+    color: #fff;
 }
 
 .ToDo_row {

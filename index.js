@@ -1,6 +1,4 @@
-let addNoteBtn = document.querySelector(".AddNote_Btn");
 
-let jobsContainer = document.querySelector(".jobs_container");
 
 let DeleteNoteBtn = document.querySelector(".DeleteNoteBtn");
 
@@ -48,11 +46,11 @@ let BlockContainer = `<li class="block_container">
                             <input type="text" placeholder="To Do" class="container_input">
 
                             <div>
-                                <a href="" style="background-color: red; margin: 10px 0 0 0;" class="DeleteList_Btn">Delete a list</a>
+                                <button class="DeleteList_Btn" style="background-color: red;margin: 10px 0 0 0;border: none; border-radius: 10px; padding: 10px 15px; color: #fff; font-weight: 600">Delete a list</button>
                             </div>
                         </div>
-                        
-                        <a href="#" style="margin-left: 0; margin-right: 0;"  class="AddNote_Btn">+ Add a note</a>
+
+                        <button onclick="AddNewNote()" class="AddNote_Btn" style="background-color: #008a8a; margin: 20px;border: none; border-radius: 10px; padding: 10px 15px; color: #fff; font-weight: 600">+ Add a note</button>
                         
                     </div>
                         
@@ -64,16 +62,27 @@ let BlockContainer = `<li class="block_container">
 
 addListBtn.addEventListener("click", (event) => {
     MainBlock.insertAdjacentHTML("afterbegin", BlockContainer);
-})
+});
 
-addNoteBtn.addEventListener("click", (event) => {
-    jobsContainer.insertAdjacentHTML("afterbegin", job)
-})
+let jobsContainer = document.querySelector(".main_block > .block_container >.jobs_container");
 
-DeleteNoteBtn.addEventListener("click", (event) => {
-    jobsContainer.remove(jobsContainer.lastElementChild)
-})
+function AddNewNote() {
+    jobsContainer.insertAdjacentHTML("afterbegin", job);
+};
 
-DeleteListBtn.addEventListener("click", (event) => {
-    MainBlock.remove(MainBlock.lastElementChild)
-})
+// addNoteBtn.addEventListener("click", (event) => {
+//     jobsContainer.insertAdjacentHTML("afterbegin", job);
+// })
+
+// DeleteNoteBtn.addEventListener("click", (event) => {
+//     jobsContainer.remove(jobsContainer.lastElementChild);
+// })
+
+// DeleteListBtn.addEventListener("click", (event) => {
+//     MainBlock.remove(MainBlock.lastElementChild);
+// })
+
+
+// let addNoteBtn = document.querySelector(".AddNote_Btn");
+
+// console.log(addNoteBtn)
